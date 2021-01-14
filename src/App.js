@@ -2,11 +2,12 @@ import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
-import { Home, Rooms, SingleRoom, Error } from "./components";
+import { NavBar, Home, Rooms, SingleRoom, Error } from "./components";
 
 const App = () => {
   return (
     <>
+    <NavBar/>
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/rooms" component={Rooms}></Route>
