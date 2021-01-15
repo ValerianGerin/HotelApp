@@ -1,10 +1,8 @@
-import React from 'react'
-
+import React from 'react';
+import Hero from "./Hero";
 const Rooms = () => {
   return (
-    <div>
-      Rooms component
-    </div>
+    <Hero hero="roomsHero"/>
   )
 }
 
