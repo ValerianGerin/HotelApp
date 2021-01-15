@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
 import Hero from "./Hero";
+import Banner from "./Banner";
+import { Link } from "react-router-dom";
 
-const  Home = () => {
+const Home = () => {
   return (
-    <Hero />
-  )
-}
+    <Hero>
+      <Banner title="luxurious rooms" subtitle="deluxe rooms strating at 299€">
+        <Link to="/rooms" className="btn-primary">our rooms</Link>
+      </Banner>
+    </Hero>
+  );
+};
 
-export default Home
-
-
+export default Home;
