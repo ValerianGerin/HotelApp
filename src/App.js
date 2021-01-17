@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-
-import { NavBar, Home, Rooms, SingleRoom, Error } from "./components";
+import { Home, Rooms, SingleRoom, Error } from "./Pages";
+import { NavBar } from "./components";
 
 const App = () => {
   return (
     <>
-    <NavBar/>
+      <NavBar />
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/rooms" component={Rooms}></Route>
