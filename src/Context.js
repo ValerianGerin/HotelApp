@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 const RoomContext = React.createContext();
 
-class RoomProvider extends Component {
-  state = {};
-  render() {
+const RoomProvider = (props)=> {
+  const [contextRoom, setContextRomm] = useState("toto")
+ 
     return (
-      <RoomContext.Provider value="hello">
-        {this.props.children}
+      <RoomContext.Provider value={contextRoom}>
+        {props.children}
       </RoomContext.Provider>
     );
-  }
+  
 }
 
 const RoomConsumer = RoomContext.Consumer;
