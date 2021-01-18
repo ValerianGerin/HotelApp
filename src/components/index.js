@@ -4,4 +4,7 @@ export { default as Banner } from './hero-banner/Banner'
 export { default as Services } from './service-section/Services'
 export { default as Title } from './service-section/Title'
 export { default as FeaturedRooms } from './featured-rooms/Feature'
+export { default as Loading} from "./loader/Loading";
+export { default as Room } from "./room/Room";
+
 
