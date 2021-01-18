@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A little front app to learn to work with context
 
 ## Available Scripts
 
